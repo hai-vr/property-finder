@@ -1,7 +1,7 @@
 {
   "name": "dev.hai-vr.property-finder",
   "displayName": "Haï ~ Property Finder",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "unity": "2019.4",
   "description": "Property Finder https://docs.hai-vr.dev/docs/products/property-finder",
   "vrchatVersion" : "2022.1.1",
