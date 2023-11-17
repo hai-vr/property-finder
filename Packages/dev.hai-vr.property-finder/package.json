@@ -1,0 +1,15 @@
+{
+  "name": "dev.hai-vr.property-finder",
+  "displayName": "Haï ~ Property Finder",
+  "version": "2.0.0",
+  "unity": "2019.4",
+  "description": "Property Finder https://docs.hai-vr.dev/docs/products/property-finder",
+  "vrchatVersion" : "2022.1.1",
+  "author" : {
+    "name" : "Haï~"
+  },
+  "vpmDependencies": {
+    "dev.hai-vr.resilience.toolkit" : "1.0.x"
+  },
+  "url" : "https://docs.hai-vr.dev/docs/products/property-finder"
+}
