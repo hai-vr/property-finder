@@ -29,9 +29,11 @@ namespace Hai.PropertyFinder.Scripts.Editor
 {
     public class PropertyFinderEditorWindow : EditorWindow
     {
+        private const int MaxSearchQueryLength = 100;
+        
         public GameObject targetObject;
 
-        private string _search;
+        private string _search = "";
         private Vector2 _scrollPos;
         private bool _focusNext;
         private static readonly string[] ColorKeywords = {"color", "colour", "tint"};
@@ -46,6 +48,11 @@ namespace Hai.PropertyFinder.Scripts.Editor
 
             GUI.SetNextControlName("search");
             _search = EditorGUILayout.TextField("Search", _search);
+            if (_search.Length > MaxSearchQueryLength)
+            {
+                // Try to prevent the editor from hanging up if the user mistakenly pastes a page long of unrelated content (it happened)
+                _search = _search.Substring(0, MaxSearchQueryLength);
+            }
             if (_focusNext)
             {
                 _focusNext = false;
