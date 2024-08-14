@@ -14,5 +14,8 @@
   "legacyFolders" : {
     "Assets\\Hai\\PropertyFinder" : "bc4b83f373dd5f34ea232f8512b0b13b"
   },
-  "url" : "https://docs.hai-vr.dev/docs/products/property-finder"
+  "url" : "https://docs.hai-vr.dev/docs/products/property-finder",
+  "documentationUrl": "https://docs.hai-vr.dev/docs/products/property-finder",
+  "changelogUrl": "https://docs.hai-vr.dev/docs/changelogs/property-finder",
+  "license": "MIT"
 }
